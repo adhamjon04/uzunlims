@@ -262,15 +262,17 @@
         text-align: center;
     }
     &__modal-wrapper{
-        width: 800px;
-        background-color: #d6c7c7f2;
-        padding: 50px;
-        margin-top: 50px;
         display: flex;
+        position: absolute;
+        width: 800px;
+        background-color: #fdf6f6f2;
+        max-height: 100%;
+        text-align: center;
+        margin-top: 50px;
         align-items: center;
         justify-content: center;
         border-radius: 15px;
-        border: 3px solid red;
+        border: 5px solid #14A0F8;
     }
     &__close-btn{
         position: absolute;
@@ -295,10 +297,17 @@
     }
     &__modal-text{ 
         display: flex;
+        overflow-wrap: anywhere;
+        text-align: center;
+        justify-content: center;
         z-index: 1001;
         color: #000;
         font-size: 18px;
         height: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 /* Traffic scss */
@@ -989,6 +998,14 @@
         &__prev{
             top: -50px;
         }
+        &__modal-wrapper{
+            width: 600px;
+        }
+        &__modal-text{
+            display: flex;
+            max-width: 100%;
+            max-height: 100%;
+        }
     } 
     .carousel{
 
@@ -1167,6 +1184,20 @@
         &__prev{
             top: -60px;
         }
+        &__modal-wrapper{
+            width: 400px;
+        }
+        &__modal-text{
+            margin-top: 30px;
+            font-size: 16px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        &__close-btn{
+            margin-right: 200px;
+
+        }
+
     } 
     .carousel{
         &__inner{
@@ -1463,6 +1494,18 @@
         }
         &__prasetwo{
             font-size: 20px;
+        }
+        &__modal-wrapper{
+            width: 300px;
+        }
+        &__modal-text{
+            margin-top: 30px;
+            font-size: 14px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        &__close-btn{
+            margin-right: 150px;
         }
     }
     .carousel{
