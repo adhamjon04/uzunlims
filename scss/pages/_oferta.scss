@@ -1,0 +1,49 @@
+.oferta{
+    margin-top: 150px;
+    &__title{
+        margin-bottom: 50px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    &__bank{
+        width: 450px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+
+    }
+
+    &__list{
+        margin-left: 50px;
+        padding-top: 50px;
+    }
+}
+.oferta p{
+    font-size: 20px;
+    max-width: 100%;
+}
+.oferta h3{
+    text-align: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:500px){
+    .oferta{
+
+        &__bank{
+            width: 350px;
+        }
+    }
+}
+@media only screen and (max-width:350px){
+    .oferta{
+
+        &__bank{
+            width: 300px;
+        }
+    }
+}

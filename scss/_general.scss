@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1536px;
+  padding: 0 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}

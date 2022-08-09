@@ -1,0 +1,1673 @@
+.header{
+    position:fixed;
+    top:0px;
+    width: 100%;
+    z-index: 10001;
+    background: rgb(255, 250, 250);
+    border-bottom:3px solid #14A0F8;
+    &__contact{
+        margin-top: 3px;
+        font-size: 16px;
+    }
+    &__admin{
+        max-width: 100%;
+        background-color: $main-color;
+        height: 35px;
+        justify-content: center;
+        padding-top: 2px;
+        margin-bottom: 0px;
+    }
+    &__admin-btn{
+        border-radius: 15px;
+        margin-right: 20px;
+        background: yellow;
+    }
+    &__admin-btn:hover{
+        background: #000;
+        color: #fff;
+        transition: all 1s ease 0.1ms;
+    }
+    &__select{
+        background-color: $main-color;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+    &__earth:hover &__globus{
+        fill: #000000;
+    }
+    &__globus{
+        margin-top: 3px;
+    }
+    &__contact:hover &__calling{
+        fill: #000000;
+    }
+
+    &__logo{
+        margin-left: 80px;
+        margin-bottom: 5px;
+    }
+    &__logo-img{
+        width: 70px;
+        height: 75px;
+        margin-top: 5px;
+    }
+    &__logo-nameone{
+        font-weight: 600;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: -8px;
+    }
+    &__logo-nametwo{
+        font-weight: 600;
+        font-size: 30px;
+        color: $main-color;
+        margin-left: 135px;
+    }
+    &__list{
+        margin-top: 40px;
+        margin-bottom:0px;
+    }
+    &__link {
+        color: #222222;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    &__item{
+        position: relative;
+    }
+    &__link::before{
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        width: 100%;
+        margin-top: 14px;
+        display: none;
+        height: 4px;
+        content: '';
+        background: #000;
+    }
+  
+    &__link:hover::before{
+        display: block;
+        transition: all 2s linear;
+        background: #14A0F8;
+       
+    }
+    &__link:hover::after{
+        display: block;
+        transition: all 2s linear;
+        background: #14A0F8;   
+    }
+    &__nav{
+        padding-left: 160px;
+    }
+    // toggle
+    &__offcanvas{
+        display: none;
+        margin-top: 10px;
+        background:none;
+        margin-right: 20px;
+        width: 60px;
+        height: 50px; 
+        font-size:30px;
+        align-items: center;
+    }
+    &__offcanvas-card{
+        max-width: 300px;
+        
+    }
+    &__toggle-div{
+        padding: 0px;
+    }
+    &__toggle-list{
+        margin-top:0px;
+        text-decoration: none;
+        list-style-type: none;
+        width: 100%; 
+        padding: 0px; 
+    }
+   
+    &__toggle-item{
+        padding-left: 30px;
+    }
+    &__toggle-item:hover {
+        background: rgba(0, 0, 0, 0.135);
+        border-radius: 10px;
+    }
+   
+    &__toggle-navlink{
+        padding: 0px;
+        color: #000;
+        font-size: 22px;
+        padding-left: 5px;
+        
+    }
+    &__toggle-navbetween{
+        border-radius: 10px;
+    }
+    &__toggle-back{
+        width: 100%;
+
+    }
+    &__toggle-back:hover{
+        background: rgba(0, 0, 0, 0.135);
+        border-radius: 10px;
+        color: #000;
+    }
+    &__menu-text{
+        margin-top: 20px;
+    }
+    &__fixxed{
+        margin-top: 4px;
+        margin-right: 5px;
+    }
+    &__setting{
+        margin-top: -5px;
+    }
+
+    //dropdown scss
+    &__dropdown-list{
+        opacity: 0;
+        z-index: 10001;
+        margin-top: 21px;
+        margin-left: -30px;
+        position: absolute;
+        width: 230px;
+        color: #000;
+        background: #fff;
+        border-radius: 10px;
+        list-style-type: none; 
+        border: #14A0F8;
+        transform: all 1s ease;
+    }
+    &__dropdown-item{
+        display: flex;
+        margin: 0px;
+        padding: 5px 0px;  
+        padding-left: 10px;
+    }
+    &__dropdown-link{
+        justify-content: left;
+        width: 100%;
+        color: #000;
+        font-size: 18px;
+    }
+    &__dropdown-icon{
+        font-size: 30px;
+        text-align: end;
+    }
+    &__item:hover &__dropdown-list{
+        opacity: 1;
+    }
+    &__dropdown-item:hover{
+        background: rgba(0, 0, 0, 0.105);
+    }
+}   
+.carousel{
+    &__inner{
+        height: 550px;
+    }
+    &__item{
+        height: 550px;
+    }
+}
+.hero{
+    position: relative;
+    top: 120px;
+    margin-bottom: 150px;
+    &__prase{
+        position: absolute;
+        z-index: 1001;
+        margin-top: 50px;
+        margin-left: 200px;
+        color: #fff;
+    }
+    &__praseone{
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    &__prasetwo{
+        font-size: 55px;
+        margin-top: 0px;
+    }
+    &__link{
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+    &__btn{
+        border: 1px solid #fff;
+        background:yellow;
+        width: 220px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 18px;
+    }
+    &__btn:hover{
+        background: #000;
+        color: #fff;
+        transition: all 1s ease 0.1ms;
+    }
+    &__modal{
+        position: fixed;
+        z-index: 10001;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.174);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__modal-wrapper{
+        width: 800px;
+        background-color: #d6c7c7f2;
+        padding: 50px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: 3px solid red;
+    }
+    &__close-btn{
+        position: absolute;
+        z-index: 10001;
+        top: 0;
+        right: 0;
+        margin-right: 300px;
+        margin-top: 200px;
+        border: none;
+        background-color: transparent;
+        font-size: 40px;
+        padding: 5px 15px;
+        border-radius: 50%;
+        background-color: rgba(34, 34, 34, 0.329);
+        cursor: pointer;
+        color: #fff;
+        transition: 0.5s ease;
+    }
+    &__close-btn:hover {
+        border-radius: 1px;
+        transition: 0.5s ease;
+    }
+    &__modal-text{ 
+        display: flex;
+        z-index: 1001;
+        color: #000;
+        font-size: 18px;
+        height: 100%;
+    }
+}
+/* Traffic scss */
+.traffic{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    &__textname{
+        font-size: 40px;
+        margin-right: 10px;
+        letter-spacing: 3px;
+    }
+    &__textnametwo{
+        font-size: 40px;
+        color: $main-color;
+        letter-spacing: 3px;
+    }
+    &__list{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__lists{
+        width: 350px;
+        height: 400px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        text-align: center;
+    }
+    &__lists:hover{
+        width: 360px;
+        box-shadow: 0px 0px 5px 5px #000;
+        background-color: #2196F3;
+        transition: width 0.3s cubic-bezier(0, 0, 1, 1)
+    }
+    &__personal{
+        width:100px;
+        text-align: center;
+        justify-content: center;
+    }
+    &__watch{
+        width:100px;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+    }
+    &__racket{
+        width:150px;
+        height: 120px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__title{
+        max-width: 340px;
+        font-size: 30px;
+        color: #fff;
+        margin: 30px 5px;
+    }
+    &__link{
+        margin-top: 50px;
+        text-decoration: none;   
+    }
+    &__btn{
+        font-size: 19px;
+        color: #fff;
+        border: 2px solid #fff;
+        width: 120px;
+        height: 50px;
+        border-radius: 25px;
+        background: none;
+    }
+    &__lists:hover &__btn{
+        background: rgba(0, 0, 0, 0.363);
+        color: #14A0F8;
+    }
+}
+.limited{
+    text-align: center;
+    justify-content: center;
+    &__container{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 50px;
+        background-repeat: no-repeat;
+    }
+    &__textone{
+        padding-top: 100px;
+        font-weight: 700;
+        font-size: 50px;
+        color: #fff;
+    }
+    &__texttwo{
+        font-weight: 500;
+        font-size: 40px;
+        color: #fff;
+        padding-bottom: 50px;
+    }
+    &__btn{
+        border: 1px solid #fff;
+        background: #14A0F8;
+        width: 250px;
+        height: 75px;
+        border-radius: 10px;
+        font-size: 22px;
+        color: #fff;
+    }
+    &__btn:hover{
+        background: yellow;
+        color: #000;
+        transition: all 1s ease 0.1ms;
+    }
+}
+.services{
+    &__textname{
+        font-size: 40px;
+        margin-right: 10px;
+        letter-spacing: 3px;
+    }
+    &__textnametwo{
+        font-size: 40px;
+        color: $main-color;
+        letter-spacing: 3px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+        text-decoration: none;
+        margin-top: 70px;
+    }
+    &__item{
+
+        text-align: center;
+        justify-content: center;
+        margin-left: 60px;
+        margin-right: 80px;
+        margin-bottom: 50px;
+    }
+    &__fexid{
+        margin-right: 250px;
+        margin-left: 20px;
+    }
+    &__text{
+        font-size: 24px;
+        color: #14A0F8;
+        font-weight: 100;
+        margin-top: 30px;
+    }
+    &__textone{
+        text-align: center;
+        max-width: 450px;
+        margin-top: 30px;
+        font-size: 18px;
+        color: rgb(89, 82, 82);
+    }
+    &__imgone{
+        width: 80px;
+    }
+    &__payments{
+        width: 80px;
+    }
+    &__payme{
+        width: 100px;
+        border: 3px solid #14A0F8;
+        border-radius: 10px;
+    }
+    &__paynet{
+        width: 100px;
+        border: 3px solid #14A0F8;
+        border-radius: 10px;
+    }
+
+    &__payme:hover{
+        border: 3px solid red;
+    }
+    &__paynet:hover{
+        border: 3px solid red;
+    }     
+}
+.maps{
+
+    &__locat{
+        border: 3px solid #14A0F8;  
+        width: 100%;
+        height: 305px;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer{
+    background: #000000;
+    width: 100%;
+    padding-bottom: 70px;
+
+    &__logo{
+        display: flex;
+        margin-bottom: 100px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    &__img{
+        width: 70px;
+        height: 75px;
+        margin-right: 20px;
+    }
+    &__logoname{
+        display: flex;
+        font-size: 30px;
+    }
+    &__name{
+        color: #fff;
+        margin: 0px; 
+        font-weight: 600;
+
+    }
+    &__onename{
+        margin-top: 30px;
+        margin-left: -27px;
+        color: #14A0F8;
+        font-weight: 600;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    &__item{
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+        text-decoration: none;
+        width: 350px;
+        margin-left: 30px;
+        margin-right: 50px;
+        margin-bottom: 50px; 
+    }
+    &__text{
+        color: #14A0F8;
+        font-size: 30px;
+        margin: 0px;
+    }
+    &__looking{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    &__address{
+        color: #fff;
+        margin: 0px;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+    &__phone{
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+    }
+    &__contact{
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        margin-top: 20px;    
+    }
+    &__license{
+        color: #fff;
+        margin: 0px;
+        text-align: center;   
+    }
+    &__icon:hover{
+        color: red;
+
+    }
+}
+
+@media only screen and (max-width:1440px){
+    .hero{
+        &__indicator{
+            top: 500px;
+        }
+    }
+    .traffic{
+        &__lists{
+     
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+    } 
+}
+@media only screen and (max-width:1300px){
+    .hero{
+
+        &__indicator{
+            top: 480px;
+        }
+        &__prev{
+            top: -80px;
+        }
+    }
+    .traffic{
+        &__lists{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    } 
+    .services{
+        &__item{
+            margin-left: 40px;
+            margin-right: 60px;
+        }
+    }   
+}
+@media only screen and (max-width:1200px){
+    .hero{
+
+        &__indicator{
+            top: 450px;
+        }
+        &__prev{
+            top: -80px;
+        }
+    }
+    .traffic{
+        &__lists{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+}
+@media only screen and (max-width:1150px){
+    .hero{
+
+        &__indicator{
+            top: 430px;
+        }
+        &__link{
+            position: absolute;
+            margin-top: 120px;
+            margin-left: 0px;
+        }
+        &__btn{
+            border: 1px solid #fff;
+            background:yellow;
+            width: 200px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 17px;
+        }
+        &__prev{
+            top: -60px;
+        }
+    }
+    .services{
+        &__item{
+            margin-left: 20px;
+            margin-right: 60px;
+        }
+    } 
+}
+@media only screen and (max-width:1100px){
+    .header{
+        &__nav{
+            padding-left: 20px;
+        }
+    }
+    .hero{
+        &__indicator{
+            top: 380px;
+        }
+        &__prase{
+            margin-top: 30px;
+            margin-left: 150px;
+            color: #fff;
+        }
+        &__praseone{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 45px;
+            margin-top: 0px;
+        }
+        &__link{
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 0px;
+        }
+        &__btn{
+            border: 1px solid #fff;
+            background:yellow;
+            width: 180px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 17px;
+        }
+        &__prev{
+            height: 200px;
+            margin-top: 100px;
+        }
+    }
+    .carousel{
+
+        &__inner{
+            height: 400px;
+        }
+        &__item{
+            height: 400px;
+        }
+    
+    }
+    .traffic{
+        margin-top: 40px;   
+        &__lists{
+     
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    }   
+    .services{
+        &__item{
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+    } 
+}
+@media only screen and (max-width:1000px){
+    .header{
+        &__logo{
+            margin-left: 30px;
+            margin-bottom: 5px;
+        }
+        &__nav{
+            padding-left: 20px;
+            font-size: 16px;
+        }
+    }
+    .hero{
+        &__indicator{
+            top: 360px;
+        }
+        &__link{
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 180px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 17px;
+        }
+        &__prev{
+            height: 200px;
+            margin-top: 100px;
+        }
+    }
+    .services{
+        &__fexid{
+            margin-right: 50px;
+            margin-left: 0px;
+        }
+        &__text{
+            font-size: 22px;
+            color: #14A0F8;
+            font-weight: 100;
+            margin-top: 30px;
+        }
+        &__textone{
+            text-align: center;
+            max-width: 450px;
+            margin-top: 30px;
+            font-size: 18px;
+            color: rgb(89, 82, 82);
+        }
+        &__imgone{
+            width: 80px;
+        }
+        &__payments{
+            width: 80px;
+        }
+        &__payme{
+            width: 100px;
+            border: 3px solid #14A0F8;
+            border-radius: 10px;
+        }
+    }
+}
+@media only screen and (max-width:940px){
+    .header{
+        &__nav{
+            padding-left: 0px;
+        }
+    }
+    .hero{
+        &__indicator{
+            top: 340px;
+        }
+        &__prase{
+            margin-top: 10px;
+            margin-left: 110px;
+            color: #fff;
+        }
+        &__praseone{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 45px;
+            margin-top: 0px;
+        }
+        &__link{
+            margin-top: 40px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 160px;
+            height: 50px;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        &__prev{
+            height: 200px;
+            margin-top: 100px;
+        }
+    }
+    .carousel{
+
+        &__inner{
+            height: 400px;
+        }
+        &__item{
+            height: 400px;
+        }
+    
+    }
+    .services{
+        &__fexid{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        &__text{
+            font-size: 20px;
+            color: #14A0F8;
+            font-weight: 100;
+            margin-top: 30px;
+        }
+        &__textone{
+            text-align: center;
+            max-width: 450px;
+            margin-top: 30px;
+            font-size: 16px;
+            color: rgb(89, 82, 82);
+        }
+        &__imgone{
+            width: 80px;
+        }
+        &__payments{
+            width: 80px;
+        }
+        &__payme{
+            width: 100px;
+            border: 3px solid #14A0F8;
+            border-radius: 10px;
+        }
+    }  
+}
+@media only screen and (max-width:880px){
+    .header{
+        &__logo{
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+        &__nav{
+            padding-left:0px;
+            font-size: 15px;
+        }
+        &__logo-img{
+            width: 60px;
+            height: 65px;
+        }
+        &__logo-nameone{
+            font-size: 28px;
+            margin-bottom: -8px;
+        }
+        &__logo-nametwo{
+            font-size: 28px;
+            margin-left: 125px;
+        }
+        &__item{
+            margin-right: -20px;
+        }
+        &__dropdown-list{
+        width: 190px;
+        }
+        &__dropdown-link{
+        font-size: 14px;
+
+        }
+    }
+    .hero{
+        &__prase{
+            margin-top: 0px;
+            margin-left: 100px;
+        }
+        &__praseone{
+            font-size: 45px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 40px;
+        }   
+        &__indicator{
+            top: 310px;
+        }
+        &__link{
+            margin-top: 60px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 160px;
+            height: 50px;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        &__prev{
+            height: 200px;
+            margin-top: 50px;
+        }
+    }
+    .carousel{
+
+        &__inner{
+            height: 370px;
+        }
+        &__item{
+            height: 370px;
+        }
+    
+    }  
+    .limited{ 
+        &__container{
+            width: 100%;
+            height: 400px;
+            margin-bottom: 50px;
+        }
+        &__textone{
+            padding-top: 50px;
+            font-size: 40px;
+        }
+        &__texttwo{
+            font-size: 30px;
+            padding-bottom: 50px;
+        }
+        &__btn{
+            width: 200px;
+            height: 70px;
+            font-size: 18px;
+           
+        }  
+    }  
+    .services{
+        &__item{
+            margin-left: 40px;
+            margin-right: 30px;
+        }
+    } 
+}
+@media only screen and (max-width:800px){
+    .hero{
+        &__indicator{
+            height: 50px;
+            top: 280px;
+        }
+       
+        &__prev{
+            top: -50px;
+        }
+    } 
+    .carousel{
+
+        &__inner{
+            height: 350px;
+        }
+        &__item{
+            height: 350px;
+        }
+    
+    } 
+}
+@media only screen and (max-width:760px){
+    .header{
+        &__logo{
+            margin-left: 30px;
+            margin-bottom: 5px;
+        }
+        &__nav{
+            display: none;
+        }
+        &__offcanvas{
+            display: block;
+        }
+    }  
+    .hero{
+        &__prase{
+            margin-top: 0px;
+            margin-left: 100px;
+        }
+        &__praseone{
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 35px;
+        }
+        &__indicator{
+            height: 50px;
+            top: 260px;
+        }
+       
+        &__prev{
+            top: -10px;
+        }
+    } 
+    .carousel{
+
+        &__inner{
+            height: 300px;
+        }
+        &__item{
+            height: 300px;
+        }
+    
+    } 
+    .traffic{
+        margin-bottom: 50px;
+        margin-top: 40px;
+        
+        &__textname{
+            font-size: 30px;
+            letter-spacing: 3px;
+
+        }
+        &__textnametwo{
+            font-size: 30px;
+            letter-spacing: 3px;
+
+        }
+    }
+    .limited{ 
+        &__container{
+            width: 100%;
+            height: 350px;
+            margin-bottom: 50px;
+        }
+        &__textone{
+            padding-top: 50px;
+            font-size: 40px;
+        }
+        &__texttwo{
+            font-size: 30px;
+            padding-bottom: 50px;
+        }
+        &__btn{
+            width: 200px;
+            height: 70px;
+            font-size: 18px;  
+        }
+    }
+    .services{
+        &__textname{
+            font-size: 28px;
+            margin-right: 10px;
+        }
+        &__textnametwo{
+            font-size: 28px;
+        }
+
+    }        
+}
+@media only screen and (max-width:680px){
+    .hero{
+        &__link{
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+        &__prase{
+            margin-top: 0px;
+            margin-left: 80px;
+        }
+        &__praseone{
+            font-size: 35px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 30px;
+        }
+            
+        &__btn{
+            width: 120px;
+            height: 30px;
+            border-radius: 30px;
+            font-size: 12px;
+        }
+        &__indicator{
+            height: 50px;
+            top: 230px;
+        }
+       
+        &__prev{
+            top: -50px;
+        }
+    } 
+    .carousel{
+
+        &__inner{
+            height: 250px;
+        }
+        &__item{
+            height: 300px;
+        }
+    
+    } 
+}
+@media only screen and (max-width:600px){
+    .hero{
+        &__prase{
+            margin-top: 0px;
+            margin-left: 80px;
+        }
+        &__praseone{
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 26px;
+        }
+        &__link{
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 120px;
+            height: 30px;
+            border-radius: 30px;
+            font-size: 12px;
+        }
+        &__indicator{
+            height: 50px;
+            top: 170px;
+            font-size: 14px;
+        }
+       
+        &__prev{
+            top: -60px;
+        }
+    } 
+    .carousel{
+        &__inner{
+            height: 200px;
+        }
+        &__item{
+            height: 250px;
+        }
+    
+    }  
+    .traffic{
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        &__textname{
+            font-size: 24px;
+            letter-spacing: 3px;
+        }
+        &__textnametwo{
+            font-size: 24px;
+            letter-spacing: 3px;
+        }
+        &__lists{
+            width: 300px;
+            height: 380px;  
+            border: 1px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        &__lists:hover{
+            width: 310px;
+            box-shadow: 0px 0px 5px 5px #000;
+            background-color: #2196F3;
+            transition: width 0.3s cubic-bezier(0, 0, 1, 1)
+    }
+    .limited{ 
+        &__container{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+        &__textone{
+            padding-top: 20px;
+            font-size: 30px;
+        }
+        &__texttwo{
+            font-size: 25px;
+            padding-bottom: 40px;
+        }
+        &__btn{
+            width: 160px;
+            height: 50px;
+            font-size: 18px;  
+        }
+    } 
+    .services{
+        &__textname{
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        &__textnametwo{
+            font-size: 24px;
+        }
+
+    }
+    .footer{
+        &__text{
+            font-size: 24px;
+
+        }
+        &__address{
+            font-size: 16px;
+        }
+        &__contact{
+            font-size: 20px;
+        }
+        &__phone{
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+        }
+
+    }  
+}
+@media only screen and (max-width:520px){
+    .hero{
+        &__indicator{
+            height: 50px;
+            top: 150px;
+            font-size: 14px;
+        }
+        &__prase{
+            margin-top: 0px;
+            margin-left: 50px;
+        }
+        &__praseone{
+            font-size: 28px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 24px;
+        }
+        &__prev{
+            height: 100px;
+            top: -20px;
+        }
+
+    }
+    .carousel{
+
+        &__inner{
+            height: 180px;
+        }
+        &__item{
+            height: 200px;
+        }
+    
+    } 
+    .traffic{
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        &__lists{
+            margin-right: 10px;
+            margin-left: 10px;
+        }        
+        &__textname{
+            font-size: 20px;
+            letter-spacing: 3px;
+
+        }
+        &__textnametwo{
+            font-size: 20px;
+            letter-spacing: 3px;
+
+        }
+    
+    }
+    .services{
+        &__textname{
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        &__textnametwo{
+            font-size: 20px;
+        }
+
+    } 
+}
+
+@media only screen and (max-width:480px){
+    .hero{
+        &__indicator{
+            height: 50px;
+            top: 150px; 
+        }
+        &__btn{
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            font-size: 8px;
+        }
+
+    }
+}
+@media only screen and (max-width:450px){
+    .header{
+        &__logo{
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+        &__logo-img{
+            width: 55px;
+            height: 60px;
+        }
+        &__logo-nameone{
+            font-size: 24px;
+            margin-bottom: -8px;
+        }
+        &__logo-nametwo{
+            font-size: 24px;
+            margin-left: 106px;
+        }
+        &__contact{
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        &__admin{
+            max-width: 100%;
+            background-color: $main-color;
+            height: 35px;
+            justify-content: center;
+            padding-top: 3px;
+            margin-bottom: 0px;
+        }
+        &__admin-btn{
+            border-radius: 15px;
+            margin-right: 5px;
+            background: yellow;
+        }
+        &__select{
+            background-color: $main-color;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+    }
+    .hero{
+         top: 105px;
+
+        &__prase{
+            margin-top: 0px;
+            margin-left: 40px;
+        }
+        &__praseone{
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 22px;
+        }
+        &__link{
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 80px;
+            height: 25px;
+            border-radius: 30px;
+            font-size: 8px;
+        }
+        &__indicator{
+            height: 50px;
+            top: 150px;
+            font-size: 14px;
+        }
+        &__prev{
+            height: 100px;
+            top: -10px;
+        }
+    }
+    .carousel{
+        &__size{
+            width: 20px;
+            height: 20px;           
+        }
+    }
+    .limited{ 
+        &__container{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+        }
+        &__textone{
+            padding-top: 20px;
+            font-size: 24px;
+        }
+        &__texttwo{
+            font-size: 20px;
+            padding-bottom: 40px;
+        }
+        &__btn{
+            width: 120px;
+            height: 40px;
+            font-size: 14px;  
+        }
+    } 
+    .footer{
+        &__contact{
+            margin-left: -30px;
+        }
+    }
+}
+
+@media only screen and (max-width:400px){
+    .hero{
+        &__indicator{
+            height: 50px;
+            top: 130px;
+            font-size: 14px;
+        }
+        &__prev{
+            height: 100px;
+            top: -30px;
+        }
+        &__prase{
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+        &__praseone{
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 20px;
+        }
+    }
+    .carousel{
+
+        &__inner{
+            height: 150px;
+        }
+        &__item{
+            height: 150px;
+        }
+    
+    } 
+    .traffic{
+        &__list{
+            padding: 0px;
+        }
+      
+        margin-top: 30px;
+        &__lists{
+            width: 300px;
+            height: 380px;  
+            border: 1px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        &__title{
+            font-size: 24px;
+            margin: 30px 5px;
+        }
+        &__personal{
+            margin-bottom: 50px;
+        }
+        &__watch{
+            margin-bottom: 10px;
+        }
+    }
+    .services{
+        &__list{
+            padding: 0px;
+        }
+    }
+    .footer{
+        &__item{
+        margin-bottom: 20px; 
+
+        }
+        &__text{
+            font-size: 20px;
+
+        }
+        &__address{
+            font-size: 16px;
+        }
+        &__contact{
+            font-size: 18px;
+            margin-left: 40px;
+        }
+        &__phone{
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+        }
+        &__license{
+            font-size: 16px;
+        }
+    } 
+}
+
+@media only screen and (max-width:376px){
+    .header{
+        &__offcanvas{
+            font-size: 20px;
+        }
+        &__logo{
+            margin-left: 5px;
+            margin-bottom: 0px;
+        }
+        &__logo-img{
+            width: 50px;
+            height: 55px;
+        }
+        &__logo-nameone{
+            font-size: 22px;
+            margin-bottom: -8px;
+        }
+        &__logo-nametwo{
+            font-size: 22px;
+            margin-left: 98px;
+        }
+        &__select{
+            font-size: 12px;
+            border-radius: 20px;
+        }
+        &__contact{
+            margin-top: 6px;
+            font-size: 12px;
+        }
+        &__admin-btn{    
+            font-size: 12px;
+        }
+        &__globus{
+            margin-left: 5px;
+        }
+        
+    }
+    .hero{
+        top: 100px;
+        &__prase{
+            margin-top: 0px;
+            margin-left: 50px;
+        }
+        &__praseone{
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+        &__link{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 80px;
+            height: 25px;
+            border-radius: 30px;
+            font-size: 8px;
+        }
+        &__prev{
+            height: 100px;
+            top: -40px;
+        }
+        &__indicator{
+            height: 50px;
+            top: 125px;
+            font-size: 14px;
+        }
+      
+    }
+    .carousel{
+
+        &__inner{
+            height: 160px;
+        }
+        &__item{
+            height: 100px;
+        }
+    
+    } 
+    .traffic{
+        margin-top: 0px;
+        &__textname{
+            font-size: 16px;
+            letter-spacing: 3px;
+
+        }
+        &__textnametwo{
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+    }
+    .services{
+        &__textname{
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        &__textnametwo{
+            font-size: 16px;
+        }
+    }
+    .footer{
+        &__contact{
+            margin-left: 30px;
+        }
+    }
+}
+}
+@media only screen and (max-width:350px){
+    .hero{
+        top: 100px;
+        &__prase{
+            margin-top: 0px;
+            margin-left: 50px;
+        }
+        &__praseone{
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        &__prasetwo{
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        &__link{
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+        &__btn{
+            width: 80px;
+            height: 25px;
+            border-radius: 30px;
+            font-size: 8px;
+        }
+    }    
+
+}
