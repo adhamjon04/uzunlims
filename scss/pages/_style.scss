@@ -253,13 +253,13 @@
         position: fixed;
         z-index: 10001;
         left: 0;
-        top: 0;
+        top: 0px;
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.174);
-        display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     &__modal-wrapper{
         width: 800px;
