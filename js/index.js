@@ -1,10 +1,4 @@
-const card = document.querySelector(".elewen");
-const cardone = document.querySelector(".one");
-const cardtwo = document.querySelector(".two");
-const cardthree = document.querySelector(".three");
-const cardfour = document.querySelector(".four");
-const cardfifte = document.querySelector(".fifte");
-const cardsex = document.querySelector(".sex");
+
 const submitForm = document.querySelector(".submitbtn");
 const loginInput = submitForm.querySelector(".email");
 const loginPassword = submitForm.querySelector(".password");
@@ -12,6 +6,9 @@ const loginPassword = submitForm.querySelector(".password");
 let Text = document.getElementById("text");
 let modal = document.getElementById("modal");
 let modalCloseBtn = document.getElementById("modalCloseBtn");
+
+
+
 
 async function UrlData(evt) {
   evt.preventDefault();
@@ -41,6 +38,7 @@ async function UrlData(evt) {
 }
 
 //modal message
+
 modalCloseBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
@@ -70,16 +68,17 @@ function clearStorages() {
   localStorage.clear(localText);
 }
 
-//modal message end
+// modal message end
 
 submitForm.addEventListener("submit", UrlData);
 
-function toggle(el) {
-  el.addEventListener("click", function (e) {
-    el.classList.toggle("is-flipped");
-  });
-}
+// function toggle(el) {
+//   el.addEventListener("click", function (e) {
+//     el.classList.toggle("is-flipped");
+//   });
+// }
 
-[card, cardone, cardtwo, cardthree, cardfour, cardfifte, cardsex].map((e) =>
-  toggle(e)
-);
+// [card, cardone, cardtwo, cardthree, cardfour, cardfifte, cardsex].map((e) =>
+//   toggle(e)
+// );
+
